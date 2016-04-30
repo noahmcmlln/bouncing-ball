@@ -1,6 +1,6 @@
 var bouncingBalls = []; // give ourselves an empty array to hold all the balls
 
-var numberOfBallsToStart = 20; // give ourselves a number of balls to start with
+var numberOfBallsToStart = 100; // give ourselves a number of balls to start with
 
 // give ourselves a basic function to pass as callbacks to forEach calls to the array
 

@@ -41,16 +41,22 @@ BouncingBall.prototype = {
   },
 
   horizontalBounce: function () {
-    this.direction.x = this.direction.x * -1;
+    this.direction.x *= -1;
   },
 
   verticalBounce: function () {
-    this.direction.y = this.direction.y * -1;
+    this.direction.y *= -1;
   },
   // display() should draw the object to the canvas, using p5 code
 
 
   display: function () {
+    textSize(50);
+    textAlign(CENTER);
+    textStyle(ITALIC);
+    fill(255);
+    text("wow", 300, 300);
+
     fill(255, 0, 255, 75);
     ellipse(this.position.x, this.position.y, this.radius * 2, this.radius * 2);
   },
